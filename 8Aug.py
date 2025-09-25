@@ -36,18 +36,23 @@ print(card_no)
 
 #Passwords is strong or weak check : 
 
-p = input("enter password: ")
-
-if len(p) < 8:
-    print("Weak")
-elif p.isalpha() or p.isdigit():
-    print("Weak")
-elif p.isalnum():
-    print("Medium")
+a = input("enter password ")
+if len( ) < 8:
+    print("weak")
+elif a.isalpha() or a.isdigit():
+    print("weak")
+elif a.isalnum():
+    print("medium")
 else:
-    print("Strong")
+    print("strong")
 
 
 
 
 # find the most common word from a sentence
+a = input ("enter sentence ")
+b = a.split()
+
+print(max(set(b)))
+
+#
