@@ -16,20 +16,9 @@ INSTRUCTIONS:
 # ==============================================================================
 
 # YOUR CODE HERE (CHALLENGE 1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+name = input("Enter your name: ")
+color = input("Enter your favorite color: ")
+print(f"Hello {name}, your favorite color {color} is cool!")
 
 
 # ==============================================================================
@@ -37,11 +26,20 @@ INSTRUCTIONS:
 # Task: Ask the user for their Birth Year. 
 #       Calculate their current age (assume current year is 2026).
 #       Print: "You are [Age] years old."
-# Logic: input() returns a string. You MUST convert it to an integer using int() 
-#        before doing math.
+#
+# LOGIC STEPS:
+# 1. birth_year = input("What year were you born? ")
+# 2. current_year = 2026
+# 3. age = current_year - int(birth_year) 
+# 4. print(f"You are {age} years old.")
 # ==============================================================================
 
 # YOUR CODE HERE (CHALLENGE 2)
+birth_year = input("What year were you born? ")
+current_year = 2026
+age = current_year - int(birth_year)
+print(f"You are {age} years old.")
+
 
 
 # ==============================================================================
@@ -51,7 +49,7 @@ INSTRUCTIONS:
 #       Swap their contents so `glass_a` has Orange and `glass_b` has Apple.
 # Restriction: Do NOT just re-assign them directly (e.g., glass_a = "Orange").
 # Hint: Think about how you would swap two liquids in real life. You need a third glass!
-# ==============================================================================
+# ============= CHALLENGE 3 CODE BELOW ==========================================
 
 glass_a = "Apple Juice"
 glass_b = "Orange Juice"
@@ -62,3 +60,10 @@ glass_b = "Orange Juice"
 # DO NOT TOUCH THIS PART - FOR VERIFICATION
 print(f"Glass A: {glass_a}")
 print(f"Glass B: {glass_b}")
+glass_a = "Apple Juice"
+glass_b = "Orange Juice"
+
+# THE SWAP LOGIC:
+temp = glass_a      # Step 1: Save Apple in temp
+glass_a = glass_b   # Step 2: Move Orange to A
+glass_b = temp      # Step 3: Move Apple (from temp) to B
