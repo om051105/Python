@@ -6,5 +6,4 @@ elif light == "yellow":
 elif light == "green":
     print("go")
 else: 
-    print ("light is broken")
-    
+    print ("light is broken")       
